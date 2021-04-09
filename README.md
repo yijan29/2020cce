@@ -1,6 +1,6 @@
 # 2020cce
 
-#第一個程式碼:找零錢
+# 第一個程式碼:找零錢
 
 ```c
 #include <stdio.h>
@@ -12,7 +12,7 @@ int main()
 }
 ```
 
-#第二個程式碼:因數個數
+# 第二個程式碼:因數個數
 
 
 ```c
@@ -30,7 +30,7 @@ int main()
 }
 ```
 
-#第三個程式碼:找倍數
+# 第三個程式碼:找倍數
 
 ```c
 #include <stdio.h>
@@ -47,7 +47,7 @@ int main()
 }
 ```
 
-#第四個程式碼:整數轉換為等級
+# 第四個程式碼:整數轉換為等級
 
 ```c
 #include <stdio.h>
@@ -62,7 +62,7 @@ int main()
 }
 ```
 
-#第五個程式碼:分式化簡
+# 第五個程式碼:分式化簡
 
 ```c
 #include <stdio.h>
@@ -90,7 +90,7 @@ int main()
 }
 ```
 
-#第六個程式碼:讀入整數反序列印
+# 第六個程式碼:讀入整數反序列印
 
 ```c
 #include <stdio.h>
@@ -113,7 +113,7 @@ int main()
 }
 ```
 
-#第七個程式碼:A的B次方函數
+# 第七個程式碼:A的B次方函數
 
 ```c
 #include <stdio.h>
@@ -134,7 +134,7 @@ int main(void)
 }
 ```
 
-#第八個程式碼:漸增數列相加
+# 第八個程式碼:漸增數列相加
 
 ```c
 #include <stdio.h>
@@ -149,7 +149,7 @@ int main()
 }
 ```
 
-#第九個程式碼:判別正方形
+# 第九個程式碼:判別正方形
 
 ```c
 #include <stdio.h>
@@ -163,7 +163,7 @@ int main()
 }
 ```
 
-#第十個程式碼:2進位轉10進位
+# 第十個程式碼:2進位轉10進位
 
 ```c
 #include <stdio.h>
@@ -183,7 +183,7 @@ int main()
 }
 ```
 
-#第十一個程式碼:均標與前標計算
+# 第十一個程式碼:均標與前標計算
 
 ```c
 #include <stdio.h>
@@ -212,7 +212,7 @@ int main()
 }
 ```
 
-#week03-1
+# week03-1
 
 ```c
 #include <stdio.h>
@@ -226,7 +226,7 @@ int main()
 }
 ```
 
-#week03-2
+# week03-2
 
 ```c
 #include <stdio.h>
@@ -251,7 +251,7 @@ int main()
 }
 ```
 
-#week03-3
+# week03-3
 
 ```c
 #include <stdio.h>
@@ -279,7 +279,7 @@ int main()
 }
 ```
 
-#week03-4
+# week03-4
 
 ```c
 #include <stdio.h>

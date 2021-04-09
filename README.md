@@ -430,3 +430,95 @@ int main()
 	}
 }
 ```
+
+# 反序數字
+
+```c
+#include <stdio.h>
+int f(int n)
+{
+	int p;
+	int m=0;
+	
+	while(n>0)
+	{
+		p=n%10;
+		n=n/10;
+		m=p+m*10;
+	}
+	
+	return m;
+}
+int main()
+{
+	int n,m;
+	scanf("%d",&n);
+	printf("%d+%d=%d\n",n,f(m),n+f(m));
+}
+```
+
+# 絕對值函數
+
+```c
+#include <stdio.h>
+int f(int n)
+{
+	if(n<0){
+		return -n;
+		}
+		else return n;
+}
+int main(void)
+{
+	int n;
+	scanf("%d",&n);
+	printf("[%d]",f(n));
+	return 0;
+}
+```
+
+# N數之和
+
+```c
+#include <stdio.h>
+int main()
+{
+	int n,ans=0,a[100];
+	scanf("%d",&n);
+	for(int i=1;i<=n;i++){
+		scanf("%d",&a[i]);
+		ans=ans+a[i];
+	}
+
+	printf("%d\n",ans);
+	
+}
+```
+
+# 三數極大
+
+```c
+#include <stdio.h>
+int main()
+{
+	int a,b,c;
+	scanf("%d%d%d",&a,&b,&c);
+	
+	if(a>b&&a>c)printf("%d\n",a);
+	else if (b>a&&b>c)printf("%d\n",b);
+	else printf("%d\n",c);
+}
+```
+
+# 計算商數
+
+```c
+#include <stdio.h>
+int main()
+{
+	int a,b;
+	scanf("%d%d",&a,&b);
+	
+	printf("%d\n",a/b);
+}
+```

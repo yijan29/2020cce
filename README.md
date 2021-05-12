@@ -704,3 +704,152 @@ int main()
 	printf("%d\n",ans);
 }
 ```
+
+# qsort 排序
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+int a[10]={4,8,3,7,5,2,9,1,6,10};
+
+int compare (const void *p1,const void *p2)
+{
+    int d1 = * (int*) p1;
+    int d2 = * (int*) p2;
+    if(d1>d2)  return 1;
+    if(d1==d2) return 0;
+    if(d1<d2)  return -1;
+}
+
+int main()
+{
+    qsort (a,10,sizeof(int),compare);
+    for(int i=0;i<10;i++){
+        printf("%d ",a[i]);
+
+    }
+
+}
+```
+
+# struct 結構1
+
+```c
+#include <stdio.h>
+struct data{
+    int ans;
+    char c;
+};
+
+struct data box;
+int main()
+{
+    box.ans=1;
+    box.c='A';
+
+    printf("%c %d\n",box.c,box.ans);
+}
+```
+
+
+# struct 結構2
+
+#include <stdio.h>
+typedef struct data{
+    int ans;
+    char c;
+}DATA;
+
+DATA box;
+
+int main()
+{
+    box.ans=1;
+    box.c='A';
+
+    printf("%c %d\n",box.c,box.ans);
+}
+
+# 兩數間可被7整除的數
+
+```c
+#include <stdio.h>
+int main()
+{
+	int a,b;
+	scanf("%d%d",&a,&b);
+	if(a>b){
+		for(int i=b;i<=a;i++){
+			if(i%7==0) printf("%d ",i);
+		}
+	}
+	
+	if(a<b){
+		for(int i=a;i<=b;i++){
+			if(i%7==0) printf("%d ",i);
+		}
+	}
+	
+}
+```
+
+# 奇數之和
+
+```c
+#include <stdio.h>
+int main()
+{
+	int n,ans=0;
+	scanf("%d",&n);
+	for(int i=1;i<=n;i++){
+		if(i%2==1) ans+=i;
+	}
+	printf("%d",ans);
+}
+```
+
+# 利用自訂函式最大值max與最小值min求出兩者之差
+
+```c
+int max(int a,int b,int c,int d)
+{
+	int x=a;
+	if(x<b) x=b;
+	if(x<c) x=c;
+	if(x<d) x=d;
+	return x;
+}
+
+int min(int a,int b,int c,int d)
+{
+	int x=a;
+	if(x>b) x=b;
+	if(x>c) x=c;
+	if(x>d) x=d;
+	return x;
+}
+
+int main(){
+  int a,b,c,d;cin>>a>>b>>c>>d;
+  cout<<(max(a,b,c,d)-min(a,b,c,d));
+  return 0;
+}
+```
+
+# 字串中的數字個數
+
+```c
+#include <stdio.h>
+int main()
+{
+	char a[80];
+	scanf("%s",&a);
+	int i=0,ans=0;
+	while(a[i]!='\0')
+	{
+		if(a[i]>='0' && a[i]<='9') ans++;
+		i++;
+	}
+	printf("%d",ans);
+}
+```
